@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+		rel="stylesheet"
+		href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+		crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/stylesheets/home.css" />
+	</head>
+
+	<body>
+		<h1><%=use%></h1>
+
+		<header>
+			<div class="name">
+				<h1 id="brand-name">LikeNuShus</h1>
+				<p class="tagline">Lightly Used Shoes, Cheap!</p>
+			</div>
+
+			<div class="logo">
+				<svg viewBox="0 0 640 512" title="shoe-logo" id="logo">
+					<path
+						d="M192 160h32V32h-32c-35.35 0-64 28.65-64 64s28.65 64 64 64zM0 416c0 35.35 28.65 64 64 64h32V352H64c-35.35 0-64 28.65-64 64zm337.46-128c-34.91 0-76.16 13.12-104.73 32-24.79 16.38-44.52 32-104.73 32v128l57.53 15.97c26.21 7.28 53.01 13.12 80.31 15.05 32.69 2.31 65.6.67 97.58-6.2C472.9 481.3 512 429.22 512 384c0-64-84.18-96-174.54-96zM491.42 7.19C459.44.32 426.53-1.33 393.84.99c-27.3 1.93-54.1 7.77-80.31 15.04L256 32v128c60.2 0 79.94 15.62 104.73 32 28.57 18.88 69.82 32 104.73 32C555.82 224 640 192 640 128c0-45.22-39.1-97.3-148.58-120.81z"
+					/>
+				</svg>
+			</div>
+		</header>
+
+		<h2>Clearance Items</h2>
+		<p class="category-description">
+			Gently used floor model sneakers and discontinued styles at our lowest prices
+			of the year. Get 'em before they're gone!
+		</p>
+
+		<div class="imgslide">
+			<div class="img">
+				<div class="imgcontaner">
+					<figure>
+						<button type="button" onclick="activeone()" id="quickview">
+							Quick View
+						</button>
+						<figcaption>Photo by <span>Maksim Larin</span></figcaption>
+						<img
+							src="https://assets.codepen.io/t-1/maksim-larin-jZyacqaR4iI-unsplash.jpg"
+							alt="a pair of blue and red ASICS sneakers"
+						/>
+						<!-- full size image at: https://images.unsplash.com/photo-1560072810-1cffb09faf0f -->
+					</figure>
+				</div>
+				<div class="nameprice">
+					<h3>Asics</h3>
+					<p class="price"><span>$65</span> USD</p>
+				</div>
+			</div>
+
+			<div class="img">
+				<div class="imgcontaner">
+					<figure>
+						<button type="button" onclick="activetwo()" id="quickview">
+							Quick View
+						</button>
+						<figcaption>Photo by <span>Daniel Storek</span></figcaption>
+						<img
+							src="https://assets.codepen.io/t-1/daniel-storek-JM-qKEd1GMI-unsplash.jpg"
+							alt="a pair of white Adidas sneakers with red and blue trim"
+						/>
+						<!-- full size image at: https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8 -->
+					</figure>
+				</div>
+				<div class="nameprice">
+					<h3>Adidas</h3>
+					<p class="price"><span>$30</span> USD</p>
+				</div>
+			</div>
+
+			<div class="img">
+				<div class="imgcontaner">
+					<figure>
+						<button type="button" onclick="activethree()" id="quickview">
+							Quick View
+						</button>
+						<figcaption>Photo by <span>felipepelaquim</span></figcaption>
+						<img
+							src="https://assets.codepen.io/t-1/felipepelaquim-6zO5VKogoZE-unsplash.jpg"
+							alt="a New Balance sneaker in olive drab with a black logo"
+						/>
+						<!-- full size image at: https://images.unsplash.com/photo-1539185441755-769473a23570 -->
+					</figure>
+				</div>
+				<div class="nameprice">
+					<h3>New Balance</h3>
+					<p class="price"><span>$45</span> USD</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="item" id="one">
+			<a onclick="activeone()"><i class="fas fa-times"></i></a>
+			<div class="itemdetails">
+				<div class="imageinfo">
+					<figure>
+						<img
+							src="https://assets.codepen.io/t-1/maksim-larin-jZyacqaR4iI-unsplash.jpg"
+							alt="a pair of blue and red ASICS sneakers"
+						/>
+						<!-- full size image at: https://images.unsplash.com/photo-1560072810-1cffb09faf0f -->
+						<figcaption>Photo by <span>Maksim Larin</span></figcaption>
+					</figure>
+				</div>
+
+				<div class="info">
+					<h3>Asics</h3>
+					<p class="description">
+						Suede fabric pointed toe stylish cut front low heel sharp on-trend toe
+						point raised heel drop sides unique silhouette. Bow detail metallic
+						eyelets leather lining luxurious finish classic courts formal slingback
+						square toe contrasting cap. Lace up fastening bow detailing high stiletto
+						heel leather lining beautiful lace upper elegant peep toe t-bar strap.
+						Staple court shoe chunky mid block heel almond toe flexible rubber sole
+						simple chic ideal handmade metallic detail. Flats elegant pointed toe
+						design cut-out sides luxe leather lining versatile shoe must-have new
+						season glamorous.
+					</p>
+					<p class="price"><span>$65</span> USD</p>
+					<p class="special">Free Shipping!</p>
+
+					<div class="box">
+						<label for="size-select">Size: &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp </label>
+						<select name="size" id="size-select">
+							<option value=""></option>
+							<option value="6">6</option>
+							<option value="6.5">6.5</option>
+							<option value="7" disabled>7</option>
+							<option value="7">7.5</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="9.5" disabled>9.5</option>
+							<option value="10">10</option>
+						</select>
+						<label for="color-select"
+							><br />
+							Color: &nbsp &nbsp &nbsp
+						</label>
+						<select name="color" id="color-select">
+							<option value=""></option>
+							<option value="blue">blue</option>
+							<option value="red">red</option>
+							<option value="black">black</option>
+						</select>
+						<label for="quantity-select"
+							><br />
+							Quantity:</label
+						>
+						<select name="quantity" id="quantity-select">
+							<option value=""></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+
+					<div class="button">
+						<button type="button">Add to Cart</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item" id="two">
+			<a onclick="activetwo()"><i class="fas fa-times"></i></a>
+			<div class="itemdetails">
+				<div class="imageinfo">
+					<figure>
+						<img
+							src="https://assets.codepen.io/t-1/daniel-storek-JM-qKEd1GMI-unsplash.jpg"
+							alt="a pair of white Adidas sneakers with red and blue trim"
+						/>
+						<!-- full size image at: https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8 -->
+						<figcaption>Photo by <span>Daniel Storek</span></figcaption>
+					</figure>
+				</div>
+
+				<div class="info">
+					<h3>Adidas</h3>
+					<p class="description">
+						Effortless comfortable full leather lining eye-catching unique detail to
+						the toe low 'cut-away' sides clean and sleek. Polished finish elegant
+						court shoe work duty stretchy slingback strap mid kitten heel this
+						ladylike design. Suede fabric pointed toe stylish cut front low heel sharp
+						on-trend toe point raised heel drop sides unique silhouette. Effortless
+						comfortable full leather lining eye-catching unique detail to the toe low
+						'cut-away' sides clean and sleek.
+					</p>
+
+					<p class="price"><span>$30</span> USD</p>
+
+					<div class="box">
+						<label for="size-select">Size: &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp</label>
+						<select name="size" id="size-select">
+							<option value=""></option>
+							<option value="6">6</option>
+							<option value="6.5" disabled>6.5</option>
+							<option value="7">7</option>
+							<option value="7">7.5</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="9.5" disabled>9.5</option>
+							<option value="10" disabled>10</option>
+						</select>
+						<label for="color-select"
+							><br />
+							Color: &nbsp &nbsp &nbsp
+						</label>
+						<select name="color" id="color-select">
+							<option value=""></option>
+							<option value="olive">olive & black</option>
+							<option value="blue">blue & black</option>
+							<option value="pink">pink & black</option>
+						</select>
+						<label for="quantity-select"
+							><br />
+							Quantity:</label
+						>
+						<select name="quantity" id="quantity-select">
+							<option value=""></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+
+					<div class="button">
+						<button type="button">Add to Cart</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item" id="three">
+			<a onclick="activethree()"><i class="fas fa-times"></i></a>
+			<div class="itemdetails">
+				<div class="imageinfo">
+					<figure>
+						<img
+							src="https://assets.codepen.io/t-1/felipepelaquim-6zO5VKogoZE-unsplash.jpg"
+							alt="a New Balance sneaker in olive drab with a black logo"
+						/>
+						<!-- full size image at: https://images.unsplash.com/photo-1539185441755-769473a23570 -->
+						<figcaption>Photo by <span>felipepelaquim</span></figcaption>
+					</figure>
+				</div>
+
+				<div class="info">
+					<h3>New Balance</h3>
+					<p class="description">
+						Suede fabric pointed toe stylish cut front low heel sharp on-trend toe
+						point raised heel drop sides unique silhouette. Bow detail metallic
+						eyelets leather lining luxurious finish classic courts formal slingback
+						square toe contrasting cap. Lace up fastening bow detailing high stiletto
+						heel leather lining beautiful lace upper elegant peep toe t-bar strap.
+						Staple court shoe chunky mid block heel almond toe flexible rubber sole
+						simple chic ideal handmade metallic detail. Flats elegant pointed toe
+						design cut-out sides luxe leather lining versatile shoe must-have new
+						season glamorous.
+					</p>
+					<p class="price"><span>$45</span> USD</p>
+					<p class="special">Just One Left!</p>
+
+					<div class="box">
+						<label for="size-select">Size: &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp</label>
+						<select name="size" id="size-select">
+							<option value=""></option>
+							<option value="6">6</option>
+							<option value="6.5" disabled>6.5</option>
+							<option value="7" disabled>7</option>
+							<option value="7" disabled>7.5</option>
+							<option value="8" disabled>8</option>
+							<option value="9" disabled>9</option>
+							<option value="9.5" disabled>9.5</option>
+							<option value="10" disabled>10</option>
+						</select>
+						<label for="color-select"
+							><br />
+							Color: &nbsp &nbsp &nbsp
+						</label>
+						<select name="color" id="color-select">
+							<option value=""></option>
+							<option value="red-blue">white with red and blue trim</option>
+							<option value="black" disabled>white with black trim</option>
+						</select>
+						<label for="quantity-select"
+							><br />
+							Quantity:</label
+						>
+						<select name="quantity" id="quantity-select">
+							<option value=""></option>
+							<option value="1">1</option>
+							<option value="2" disabled>2</option>
+							<option value="3" disabled>3</option>
+							<option value="4" disabled>4</option>
+							<option value="5" disabled>5</option>
+						</select>
+					</div>
+
+					<div class="button">
+						<button type="button">Add to Cart</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script src="/javascripts/home.js"></script>
+	</body>
+</html>
