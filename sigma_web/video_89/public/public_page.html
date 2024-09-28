@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Public Page</title>
+        <link rel="stylesheet" href="public_page.css">
+	</head>
+	<body>
+		<div id="div1">
+			<h1>Welcome to the Backend server</h1>
+		</div>
+        <div id="div2">
+            <h2>This is public_page.html</h2>
+        </div>
+        <button id="button">Click</button>
+	</body>
+    <script>
+        async function testPost() {
+            let a = await fetch("/", {method: "PUT"});
+            let b = await a.text();
+            console.log(b);
+        }
+        testPost();
+        let btn = document.getElementById("button");
+        btn.addEventListener('click', () => {
+            // window.location.href = "http://127.0.0.1:3000/";
+            window.open("http://127.0.0.1:3000/public_page.html", '_blank');
+        })
+    </script>
+</html>
