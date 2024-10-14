@@ -19,8 +19,6 @@ app.get("/", (req, res) => {
 	res.send("Hello World!");
 });
 
-app.get("/favicon.ico", (req, res) => res.status(204).end());
-
 app.get("/aaa", async (req, res) => {
 
 	// console.log("Headers: -----------", req.headers);
